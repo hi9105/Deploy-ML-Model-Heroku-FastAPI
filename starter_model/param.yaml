@@ -1,0 +1,20 @@
+modeling:
+  test_size: 0.2
+  val_size: 0.2
+  random_seed: 42
+  # Column to use for stratification (use "none" for no stratification)
+  stratify_by: "neighbourhood_group"
+  random_forest:
+    n_estimators: 100
+    max_depth: 15
+    min_samples_split: 4
+    min_samples_leaf: 3
+    n_jobs: -1
+    max_features: 0.5
+    oob_score: true
+    n_splits: 10
+    max_iter: 100
+
+data:
+  clean_data: 'data/cleanCensusData.csv'
+  raw_data: 'data/rawCensusData.csv'
