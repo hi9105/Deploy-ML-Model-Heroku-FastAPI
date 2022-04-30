@@ -1,0 +1,17 @@
+name: deployModel
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - scikit-learn
+  - dvc
+  - pandas
+  - numpy
+  - pytest
+  - jupyter
+  - jupyterlab
+  - fastapi
+  - uvicorn
+  - requests
+  - gunicorn
