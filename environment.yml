@@ -15,3 +15,4 @@ dependencies:
   - uvicorn
   - requests
   - gunicorn
+  - dvc-s3
