@@ -1,4 +1,6 @@
 from sklearn.metrics import fbeta_score, precision_score, recall_score
+from sklearn.ensemble import RandomForestClassifier
+import joblib
 
 
 # Optional: implement hyperparameter tuning.
@@ -18,7 +20,10 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
 
-    pass
+    model = RandomForestClassifier()
+    model.fit(X_train, y_train)
+
+    return model
 
 
 def compute_model_metrics(y, preds):
@@ -57,4 +62,25 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-    pass
+
+    preds = model.predict(X)
+    return preds
+
+
+def save_all_files(model, encoder, lb):
+    """ Save model, encoder and lb  as .pkl files.
+
+    Inputs
+    ------
+    model : Trained machine learning model.
+    encoder : sklearn.preprocessing._encoders.OneHotEncoder.
+    lb : sklearn.preprocessing._label.LabelBinarizer.
+
+    Returns
+    -------
+    None
+    """
+
+    joblib.dump(model, "random_forest_model.pkl")
+    joblib.dump(encoder, "encoder.pkl")
+    joblib.dump(lb, "label_encoder.pkl")

@@ -16,3 +16,4 @@ dependencies:
   - requests
   - gunicorn
   - dvc-s3
+  - joblib
