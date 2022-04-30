@@ -1,5 +1,30 @@
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
+
+
+def clean_data(data: pd.DataFrame):
+
+    """ Clean the data used in the machine learning pipeline.
+    This data is messy. Clean it to remove all spaces.
+
+    Inputs
+    ------
+    data : pd.DataFrame
+        Dataframe containing raw data.
+
+    Returns
+    -------
+    data : pd.DataFrame
+        Dataframe containing cleaned data.
+    """
+
+    data.columns = data.columns.str.strip()
+
+    for col in data.select_dtypes("object").columns:
+        data[col] = data[col].str.strip()
+
+    return data
 
 
 def process_data(
