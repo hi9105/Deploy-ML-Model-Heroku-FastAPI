@@ -5,7 +5,7 @@
 
 ## Model Details
 
-- Random Forest Classifier model is used. Dataset has around 60,000 records.
+- Random Forest Classifier model is used. Dataset has around 33,000 records.
 
 - The model predicts that whether a person has salary > 50K or salary <= 50K.
 
