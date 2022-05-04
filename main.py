@@ -5,7 +5,7 @@ This RESTful API is using FastAPI for running Random forest classifier on Heroku
 """
 
 import pandas as pd
-import os, joblib
+import os, joblib, json
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.encoders import jsonable_encoder
@@ -90,7 +90,8 @@ async def welcome_message():
     """
 
     return {
-        "message": "Welcome message : This is FastAPI web framework to predict whether a person has salary > 50K or <= 50K !!!"}
+        "message": "Welcome message : This is FastAPI web framework to predict whether a person has salary > 50K or "
+                   "<= 50K !!!"}
 
 
 # POST to do model inference.

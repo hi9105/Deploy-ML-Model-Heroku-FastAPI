@@ -6,8 +6,9 @@ from yaml.loader import SafeLoader
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from ml.data import process_data, clean_data
-from ml.model import train_model, compute_model_metrics, inference, save_all_files
+from data import process_data, clean_data
+from model import train_model, compute_model_metrics, inference, save_model
+from slices_performance import slice_performance
 
 with open('params.yaml', "rb") as f:
     params = yaml.load(f, Loader=SafeLoader)
@@ -40,10 +41,15 @@ X_test, y_test, encoder, lb = process_data(
 
 # Train model.
 random_forest_model = train_model(X_train, y_train)
+
+# Calculate prediction of model.
 preds = inference(random_forest_model, X_test)
 
 # Compute results.
 precision, recall, fbeta = compute_model_metrics(y_test, preds)
 
-# save model, encoder and lb.
-save_all_files(random_forest_model, encoder, lb)
+# save model and other files.
+save_model(random_forest_model, encoder, lb)
+
+# outputs the performance of the model on slices of the categorical features.
+slice_performance(data, random_forest_model, encoder, lb, cat_features, label='salary')

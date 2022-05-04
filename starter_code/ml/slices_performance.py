@@ -6,8 +6,8 @@ It uses saved model, encoder and lb.
 It output the performance on slices of just the categorical features.
 """
 
-from starter_model.ml.model import inference, compute_model_metrics
-from starter_model.ml.data import process_data
+from model import inference, compute_model_metrics
+from data import process_data
 import logging
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s- %(message)s")
