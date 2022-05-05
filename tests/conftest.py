@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/home/hihi1/Deploy-ML-Model-Heroku-FastAPI')
+
 import pytest, os
 import pandas as pd
 import joblib

@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/home/hihi1/Deploy-ML-Model-Heroku-FastAPI')
+
 import os
 import pandas as pd
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
