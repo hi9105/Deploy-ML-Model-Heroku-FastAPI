@@ -21,6 +21,7 @@
           <option value="test.test_model.list" />
           <option value="test.test_model.isinstance" />
           <option value="starter_code.ml.train_model.open" />
+          <option value="starter_code.ml.train_model.print" />
         </list>
       </option>
     </inspection_tool>

@@ -13,8 +13,10 @@ from data import process_data, clean_data
 from model import train_model, compute_model_metrics, inference, save_model
 from slices_performance import slice_performance
 
-with open("params.yaml", "rb") as f:
-    params = yaml.load(f, Loader=SafeLoader)
+#with open("params.yaml", "rb") as f:
+    #params = yaml.load(f, Loader=SafeLoader)
+
+params = yaml.safe_load(open("params.yaml"))
 
 # load the data.
 data = pd.read_csv(params["data"]["raw_data"])
