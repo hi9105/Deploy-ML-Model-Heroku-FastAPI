@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
+
 from fastapi.testclient import TestClient
 from main import app
 
