@@ -1,6 +1,9 @@
 # Script to train machine learning model.
 
 # necessary imports.
+import sys
+sys.path.append('/home/hihi1/Deploy-ML-Model-Heroku-FastAPI')
+
 import yaml
 from yaml.loader import SafeLoader
 
