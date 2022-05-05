@@ -12,5 +12,5 @@ modeling:
     oob_score: true
 
 data:
-  clean_data: 'data/cleanCensusData.csv'
-  raw_data: 'data/rawCensusData.csv'
+  clean_data: 'starter_code/data/cleanCensusData.csv'
+  raw_data: 'starter_code/data/rawCensusData.csv'

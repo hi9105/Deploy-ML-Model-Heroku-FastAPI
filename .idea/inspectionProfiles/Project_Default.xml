@@ -1,6 +1,14 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E265" />
+          <option value="E116" />
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
@@ -22,6 +30,7 @@
           <option value="test.test_model.isinstance" />
           <option value="starter_code.ml.train_model.open" />
           <option value="starter_code.ml.train_model.print" />
+          <option value="starter_code.ml.train_model.yaml" />
         </list>
       </option>
     </inspection_tool>
