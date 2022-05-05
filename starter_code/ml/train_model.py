@@ -13,7 +13,7 @@ from data import process_data, clean_data
 from model import train_model, compute_model_metrics, inference, save_model
 from slices_performance import slice_performance
 
-with open("params.yaml", "rb") as f:
+with open("../params.yaml", "rb") as f:
     params = yaml.load(f, Loader=SafeLoader)
 
 # load the data.
