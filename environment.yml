@@ -17,3 +17,4 @@ dependencies:
   - gunicorn
   - dvc-s3
   - joblib
+  - pyyaml

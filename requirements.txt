@@ -10,3 +10,4 @@ gunicorn
 joblib
 dvc
 dvc[s3]
+pyyaml
