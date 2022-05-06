@@ -44,6 +44,9 @@
 ## Metrics
 
 - For understanding the model performance, metrics like Precision, Recall and F-score have been used.
+- Precision score: 0.7240618101545254
+- Recall score: 0.631578947368421
+- Fbeta score : 0.6746657524854303
 
 
 ## Ethical Considerations
