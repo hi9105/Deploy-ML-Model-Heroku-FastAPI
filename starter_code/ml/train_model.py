@@ -1,8 +1,8 @@
 # Script to train machine learning model.
 
 # necessary imports.
-import sys
-sys.path.append('/home/hihi1/Deploy-ML-Model-Heroku-FastAPI')
+#import sys
+#sys.path.append('/home/hihi1/Deploy-ML-Model-Heroku-FastAPI')
 
 import yaml
 from yaml.loader import SafeLoader
@@ -17,7 +17,8 @@ with open("../params.yaml", "rb") as f:
     params = yaml.load(f, Loader=SafeLoader)
 
 # load the data.
-data = pd.read_csv(params["data"]["raw_data"])
+#data = pd.read_csv(params["data"]["raw_data"])
+data = pd.read_csv("../data/rawCensusData.csv")
 
 # clean the data.
 data = clean_data(data)

@@ -81,6 +81,6 @@ def save_model(model, encoder, lb):
     None
     """
 
-    joblib.dump(model, os.path.join("starter_code", "model_files", "random_forest_model.pkl"))
-    joblib.dump(encoder, os.path.join("starter_code", "model_files", "encoder.pkl"))
-    joblib.dump(lb, os.path.join("starter_code", "model_files", "lb.pkl"))
+    joblib.dump(model, "../model_files/random_forest_model.pkl")
+    joblib.dump(encoder, "../model_files/encoder.pkl")
+    joblib.dump(lb, "../model_files/lb.pkl")
