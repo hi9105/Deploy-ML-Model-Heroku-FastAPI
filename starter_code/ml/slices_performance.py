@@ -8,7 +8,7 @@ It output the performance on slices of just the categorical features.
 
 from model import inference, compute_model_metrics
 from data import process_data
-import logging
+import logging, json
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s- %(message)s")
 logger = logging.getLogger()
@@ -37,10 +37,17 @@ def slice_performance(df, model, encoder, lb, cat_features, label='salary'):
     -------
     None
     """
-    slice_performance_report = []
+
+    slice_performance_report = {}
     for categorical in cat_features:
-        logger.info(f"Start : Model performance on slice of categorical feature : {categorical}")
+        #logger.info(f"Start : Model performance of categorical feature : {categorical}")
+
+        slice_performance_report.update({categorical: []})
+        #create a list
+        categorical_value = slice_performance_report[categorical]
+
         for value in df[categorical].unique():
+            #logger.info(f"Categorical feature : {categorical}, Value : {value}")
             df_temp = df[df[categorical] == value]
 
             X, y, _, _ = process_data(df_temp,
@@ -51,6 +58,10 @@ def slice_performance(df, model, encoder, lb, cat_features, label='salary'):
 
             precision, recall, fbeta = compute_model_metrics(y, preds)
 
-            slice_performance_report.append((categorical, value, precision, recall, fbeta))
+            categorical_value.append({"Value": value,
+                                      "Precision score": precision,
+                                      "Recall score": recall,
+                                      "Fbeta score": fbeta})
 
-            logger.info(f"Success : Model performance on slice of categorical feature : {categorical}")
+            with open('../slice_performance_report.json', 'w', encoding='utf-8') as f:
+                json.dump(slice_performance_report, f, ensure_ascii=False, indent=4)
