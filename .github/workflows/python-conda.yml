@@ -44,7 +44,7 @@ jobs:
     
     - name: DVC command
       run: |
-        dvc remote add -d s3remote s3://modelawsbucket/amazons3folder
+     #- dvc remote add -d s3remote s3://modelawsbucket/amazons3folder
         dvc pull
      #- dvc push --remote s3remote
     
