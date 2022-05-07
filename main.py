@@ -24,7 +24,7 @@ cat_features = ["workclass", "education", "marital_status", "occupation", "relat
 # this is required for running DVC on Heroku
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
-    os.system("dvc remote add -d s3remote s3://modelawsbucket/amazons3folder")
+    #os.system("dvc remote add -d s3remote s3://modelawsbucket/amazons3folder")
     if os.system("dvc pull") != 0:
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
