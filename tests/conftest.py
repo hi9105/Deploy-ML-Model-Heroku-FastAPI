@@ -2,7 +2,7 @@ import pytest, os, sys
 import pandas as pd
 import joblib
 
-#sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
+sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
 #sys.path.insert(0, os.getcwd())
 from starter_code.ml.data import process_data
 
