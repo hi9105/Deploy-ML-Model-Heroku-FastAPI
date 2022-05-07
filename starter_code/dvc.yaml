@@ -1,10 +1,10 @@
-stages:
-  split_data:
-    cmd: python ml/split_data.py
-    deps:
-      - data/cleanCensusData.csv
-    params:
-      - modeling.test_size
-    outs:
-      - data/test_data.csv
-      - data/train_val_data.csv
+#stages:
+  #split_data:
+    #cmd: #python ml/split_data.py
+    #deps:
+      #- data/cleanCensusData.csv
+    #params:
+      #- modeling.test_size
+    #outs:
+      #- data/test_data.csv
+      #- data/train_val_data.csv
