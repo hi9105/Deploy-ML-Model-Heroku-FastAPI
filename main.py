@@ -4,6 +4,9 @@ Date: May 2021
 This RESTful API is using FastAPI for running Random forest classifier on Heroku
 """
 
+import sys
+sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
+
 import pandas as pd
 import os, joblib, json
 from fastapi import FastAPI
