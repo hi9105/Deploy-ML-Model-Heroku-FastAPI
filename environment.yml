@@ -10,13 +10,13 @@ dependencies:
   - pip
   - numpy
   - pytest
-  - jupyter
-  - jupyterlab
+  #- jupyter
+  #- jupyterlab
   - fastapi
   - uvicorn
-  - requests
-  - gunicorn
+  #- requests
+  #- gunicorn
   #- dvc-s3
   - joblib
-  - pyyaml
+  #- pyyaml
   - pre-commit
