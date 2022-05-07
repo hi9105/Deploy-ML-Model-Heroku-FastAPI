@@ -43,9 +43,10 @@ jobs:
       uses: iterative/setup-dvc@v1
     
     - name: DVC command
-      run: dvc pull
-      #- run: dvc remote add -d s3remote s3://modelawsbucket/amazons3folder
-      #- run: dvc push --remote s3remote
+      run: |
+        dvc remote add -d s3remote s3://modelawsbucket/amazons3folder
+        dvc pull
+     #- dvc push --remote s3remote
     
     - name: Test with pytest
       run: |
