@@ -8,8 +8,8 @@ from starter_code.ml.data import process_data
 
 
 @pytest.fixture(scope='session')
-def data(clean_data=os.path.join("starter_code", "data", "cleanCensusData.csv")):
-    data = pd.read_csv(clean_data)
+def data(request):
+    data = pd.read_csv('starter_code/data/cleanCensusData.csv')
     return data
 
 
