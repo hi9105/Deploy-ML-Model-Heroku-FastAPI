@@ -9,9 +9,9 @@ from starter_code.ml.data import process_data
 
 @pytest.fixture(scope='session')
 def data(request):
-    ROOT_DIR = os.path.abspath(os.curdir)
-    data = pd.read_csv(os.path.join(ROOT_DIR, 'starter_code/data/cleanCensusData.csv'))
-    #data = pd.read_csv('starter_code/data/cleanCensusData.csv')
+    #ROOT_DIR = os.path.abspath(os.curdir)
+    #data = pd.read_csv(os.path.join(ROOT_DIR, 'starter_code/data/cleanCensusData.csv'))
+    data = pd.read_csv("/starter_code/data/cleanCensusData.csv")
     return data
 
 
