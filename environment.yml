@@ -5,8 +5,9 @@ channels:
 dependencies:
   #- python=3.8
   - scikit-learn
-  - dvc
+  #- dvc
   - pandas
+  - pip
   - numpy
   - pytest
   - jupyter
@@ -15,6 +16,7 @@ dependencies:
   - uvicorn
   - requests
   - gunicorn
-  - dvc-s3
+  #- dvc-s3
   - joblib
   - pyyaml
+  - pre-commit
