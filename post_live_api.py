@@ -11,7 +11,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
-url = ""
+url = "https://predict-person-salary.herokuapp.com/predict"
 
 headers = {'content-type': 'application/json'}
 
