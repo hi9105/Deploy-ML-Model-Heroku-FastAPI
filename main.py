@@ -18,8 +18,8 @@ from starter_code.ml.data import process_data
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
 logger = logging.getLogger()
 
-cat_features = ["workclass", "education", "marital_status", "occupation", "relationship",
-                "race", "sex", "native_country"]
+cat_features = ["workclass", "education", "marital-status", "occupation", "relationship",
+                "race", "sex", "native-country"]
 
 # this is required for running DVC on Heroku
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
@@ -114,8 +114,7 @@ async def post_model_inference(postData: CensusData):
 
     logger.info("Processing post data...")
     X, _, _, _ = process_data(
-        post_data_df, categorical_features=cat_features, label='salary', training=False,
-        encoder=encoder, lb=lb)
+        post_data_df, categorical_features=cat_features, training=False, encoder=encoder, lb=lb)
 
     logger.info("Predicting post data...")
     preds = model.predict(X)
