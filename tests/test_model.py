@@ -18,9 +18,7 @@ def test_data_size(data: pd.DataFrame, expected_columns: list):
 
 
 def test_process_data(data, categorical_features):
-    _, _, encoder, lb = process_data(data, categorical_features,
-                                     label=None, training=True,
-                                     encoder=None, lb=None)
+    _, _, encoder, lb = process_data(data, categorical_features, label="salary", training=True)
 
     assert isinstance(encoder, OneHotEncoder)
     assert isinstance(lb, LabelBinarizer)
