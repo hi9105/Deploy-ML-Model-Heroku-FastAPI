@@ -2,45 +2,45 @@
     "workclass": [
         {
             "Value": "State-gov",
-            "Precision score": 0.9618768328445748,
-            "Recall score": 0.9291784702549575,
-            "Fbeta score": 0.9452449567723342
+            "Precision score": 0.9565217391304348,
+            "Recall score": 0.9348441926345609,
+            "Fbeta score": 0.9455587392550143
         },
         {
             "Value": "Self-emp-not-inc",
-            "Precision score": 0.9518950437317785,
-            "Recall score": 0.9019337016574586,
-            "Fbeta score": 0.926241134751773
+            "Precision score": 0.9511111111111111,
+            "Recall score": 0.8867403314917127,
+            "Fbeta score": 0.9177984274481772
         },
         {
             "Value": "Private",
-            "Precision score": 0.9544975774173162,
-            "Recall score": 0.9129558734636308,
-            "Fbeta score": 0.9332646755921731
+            "Precision score": 0.9528872211799041,
+            "Recall score": 0.921015514809591,
+            "Fbeta score": 0.9366803278688525
         },
         {
             "Value": "Federal-gov",
-            "Precision score": 0.944,
-            "Recall score": 0.954177897574124,
-            "Fbeta score": 0.9490616621983914
+            "Precision score": 0.9633802816901409,
+            "Recall score": 0.921832884097035,
+            "Fbeta score": 0.9421487603305786
         },
         {
             "Value": "Local-gov",
-            "Precision score": 0.9507389162561576,
-            "Recall score": 0.9384116693679092,
-            "Fbeta score": 0.9445350734094616
+            "Precision score": 0.95,
+            "Recall score": 0.9238249594813615,
+            "Fbeta score": 0.9367296631059983
         },
         {
             "Value": "?",
-            "Precision score": 0.9175257731958762,
-            "Recall score": 0.9319371727748691,
-            "Fbeta score": 0.9246753246753248
+            "Precision score": 0.9497206703910615,
+            "Recall score": 0.8900523560209425,
+            "Fbeta score": 0.918918918918919
         },
         {
             "Value": "Self-emp-inc",
-            "Precision score": 0.961038961038961,
+            "Precision score": 0.9579288025889967,
             "Recall score": 0.9517684887459807,
-            "Fbeta score": 0.9563812600969306
+            "Fbeta score": 0.9548387096774194
         },
         {
             "Value": "Without-pay",
@@ -58,87 +58,87 @@
     "education": [
         {
             "Value": "Bachelors",
-            "Precision score": 0.9465821638750566,
-            "Recall score": 0.9414678072940117,
-            "Fbeta score": 0.9440180586907448
+            "Precision score": 0.9517962710322874,
+            "Recall score": 0.9423683025664116,
+            "Fbeta score": 0.9470588235294118
         },
         {
             "Value": "HS-grad",
-            "Precision score": 0.95478374836173,
-            "Recall score": 0.8698507462686568,
-            "Fbeta score": 0.9103405185879412
+            "Precision score": 0.9500984898227183,
+            "Recall score": 0.8638805970149254,
+            "Fbeta score": 0.9049405878674172
         },
         {
             "Value": "11th",
-            "Precision score": 1.0,
-            "Recall score": 0.8333333333333334,
-            "Fbeta score": 0.9090909090909091
+            "Precision score": 0.9423076923076923,
+            "Recall score": 0.8166666666666667,
+            "Fbeta score": 0.8749999999999999
         },
         {
             "Value": "Masters",
-            "Precision score": 0.9508196721311475,
-            "Recall score": 0.9676746611053181,
-            "Fbeta score": 0.9591731266149871
+            "Precision score": 0.9625779625779626,
+            "Recall score": 0.9655891553701773,
+            "Fbeta score": 0.9640812077043207
         },
         {
             "Value": "9th",
-            "Precision score": 1.0,
-            "Recall score": 0.8518518518518519,
-            "Fbeta score": 0.92
+            "Precision score": 0.95,
+            "Recall score": 0.7037037037037037,
+            "Fbeta score": 0.8085106382978724
         },
         {
             "Value": "Some-college",
-            "Precision score": 0.950381679389313,
-            "Recall score": 0.8976207642393655,
-            "Fbeta score": 0.9232480533926586
+            "Precision score": 0.9481981981981982,
+            "Recall score": 0.9105984138428262,
+            "Fbeta score": 0.9290180213313718
         },
         {
             "Value": "Assoc-acdm",
-            "Precision score": 0.972,
-            "Recall score": 0.9169811320754717,
-            "Fbeta score": 0.9436893203883495
+            "Precision score": 0.9429657794676806,
+            "Recall score": 0.9358490566037736,
+            "Fbeta score": 0.9393939393939394
         },
         {
             "Value": "Assoc-voc",
-            "Precision score": 0.9572649572649573,
-            "Recall score": 0.9307479224376731,
-            "Fbeta score": 0.943820224719101
+            "Precision score": 0.9484240687679083,
+            "Recall score": 0.9168975069252078,
+            "Fbeta score": 0.9323943661971832
         },
         {
             "Value": "7th-8th",
             "Precision score": 1.0,
-            "Recall score": 0.85,
-            "Fbeta score": 0.9189189189189189
+            "Recall score": 0.7,
+            "Fbeta score": 0.8235294117647058
         },
         {
             "Value": "Doctorate",
-            "Precision score": 0.9498432601880877,
-            "Recall score": 0.9901960784313726,
-            "Fbeta score": 0.9696
+            "Precision score": 0.9611650485436893,
+            "Recall score": 0.9705882352941176,
+            "Fbeta score": 0.9658536585365853
         },
         {
             "Value": "Prof-school",
-            "Precision score": 0.9716312056737588,
-            "Recall score": 0.9716312056737588,
-            "Fbeta score": 0.9716312056737588
+            "Precision score": 0.9671361502347418,
+            "Recall score": 0.9739952718676123,
+            "Fbeta score": 0.9705535924617197
         },
         {
             "Value": "5th-6th",
             "Precision score": 1.0,
-            "Recall score": 0.875,
-            "Fbeta score": 0.9333333333333333
+            "Recall score": 0.8125,
+            "Fbeta score": 0.896551724137931
         },
         {
             "Value": "10th",
-            "Precision score": 0.9433962264150944,
-            "Recall score": 0.8064516129032258,
-            "Fbeta score": 0.8695652173913043
+            "Precision score": 0.9655172413793104,
+            "Recall score": 0.9032258064516129,
+            "Fbeta score": 0.9333333333333333
         },
         {
             "Value": "1st-4th",
             "Precision score": 1.0,
-            "Recall score": 0.5,
-            "Fbeta score": 0.6666666666666666
+            "Recall score": 0.8333333333333334,
+            "Fbeta score": 0.9090909090909091
         },
         {
             "Value": "Preschool",
@@ -149,66 +149,66 @@
         {
             "Value": "12th",
             "Precision score": 1.0,
-            "Recall score": 0.8181818181818182,
-            "Fbeta score": 0.9
+            "Recall score": 0.9090909090909091,
+            "Fbeta score": 0.9523809523809523
         }
     ],
     "marital-status": [
         {
             "Value": "Never-married",
-            "Precision score": 0.9790697674418605,
-            "Recall score": 0.8574338085539714,
-            "Fbeta score": 0.9142236699239956
+            "Precision score": 0.9787735849056604,
+            "Recall score": 0.845213849287169,
+            "Fbeta score": 0.9071038251366119
         },
         {
             "Value": "Married-civ-spouse",
-            "Precision score": 0.9498010407101316,
-            "Recall score": 0.9273759713090257,
-            "Fbeta score": 0.9384545592015726
+            "Precision score": 0.9490339266697094,
+            "Recall score": 0.9321578003586372,
+            "Fbeta score": 0.9405201658499811
         },
         {
             "Value": "Divorced",
-            "Precision score": 0.9673659673659674,
-            "Recall score": 0.896328293736501,
-            "Fbeta score": 0.9304932735426009
+            "Precision score": 0.9828009828009828,
+            "Recall score": 0.8639308855291576,
+            "Fbeta score": 0.9195402298850576
         },
         {
             "Value": "Married-spouse-absent",
             "Precision score": 1.0,
-            "Recall score": 0.8823529411764706,
-            "Fbeta score": 0.9375
+            "Recall score": 0.8529411764705882,
+            "Fbeta score": 0.9206349206349206
         },
         {
             "Value": "Separated",
-            "Precision score": 0.9830508474576272,
-            "Recall score": 0.8787878787878788,
-            "Fbeta score": 0.9279999999999999
+            "Precision score": 0.9838709677419355,
+            "Recall score": 0.9242424242424242,
+            "Fbeta score": 0.9531249999999999
         },
         {
             "Value": "Married-AF-spouse",
             "Precision score": 1.0,
-            "Recall score": 0.8,
-            "Fbeta score": 0.888888888888889
+            "Recall score": 0.7,
+            "Fbeta score": 0.8235294117647058
         },
         {
             "Value": "Widowed",
-            "Precision score": 0.9871794871794872,
-            "Recall score": 0.9058823529411765,
-            "Fbeta score": 0.9447852760736197
+            "Precision score": 1.0,
+            "Recall score": 0.788235294117647,
+            "Fbeta score": 0.8815789473684211
         }
     ],
     "occupation": [
         {
             "Value": "Adm-clerical",
-            "Precision score": 0.9575371549893843,
+            "Precision score": 0.9494736842105264,
             "Recall score": 0.8895463510848126,
-            "Fbeta score": 0.9222903885480573
+            "Fbeta score": 0.9185336048879837
         },
         {
             "Value": "Exec-managerial",
-            "Precision score": 0.9574358974358974,
-            "Recall score": 0.9486788617886179,
-            "Fbeta score": 0.9530372639101582
+            "Precision score": 0.9612640163098879,
+            "Recall score": 0.9583333333333334,
+            "Fbeta score": 0.9597964376590331
         },
         {
             "Value": "Handlers-cleaners",
@@ -218,63 +218,63 @@
         },
         {
             "Value": "Prof-specialty",
-            "Precision score": 0.9494895217624932,
-            "Recall score": 0.9505110274341043,
-            "Fbeta score": 0.95
+            "Precision score": 0.9544715447154472,
+            "Recall score": 0.9472834857450242,
+            "Fbeta score": 0.9508639308855292
         },
         {
             "Value": "Other-service",
-            "Precision score": 0.9747899159663865,
-            "Recall score": 0.8467153284671532,
-            "Fbeta score": 0.90625
+            "Precision score": 0.9727272727272728,
+            "Recall score": 0.781021897810219,
+            "Fbeta score": 0.8663967611336033
         },
         {
             "Value": "Sales",
-            "Precision score": 0.945031712473573,
-            "Recall score": 0.9094608341810784,
-            "Fbeta score": 0.9269051321928461
+            "Precision score": 0.9503695881731784,
+            "Recall score": 0.9155645981688708,
+            "Fbeta score": 0.9326424870466321
         },
         {
             "Value": "Craft-repair",
-            "Precision score": 0.9551208285385501,
-            "Recall score": 0.8934337997847147,
-            "Fbeta score": 0.9232480533926586
+            "Precision score": 0.9389400921658986,
+            "Recall score": 0.8772874058127018,
+            "Fbeta score": 0.9070673344462993
         },
         {
             "Value": "Transport-moving",
-            "Precision score": 0.96875,
-            "Recall score": 0.871875,
-            "Fbeta score": 0.9177631578947368
+            "Precision score": 0.9719298245614035,
+            "Recall score": 0.865625,
+            "Fbeta score": 0.915702479338843
         },
         {
             "Value": "Farming-fishing",
-            "Precision score": 1.0,
-            "Recall score": 0.8521739130434782,
-            "Fbeta score": 0.92018779342723
+            "Precision score": 0.97,
+            "Recall score": 0.8434782608695652,
+            "Fbeta score": 0.9023255813953489
         },
         {
             "Value": "Machine-op-inspct",
-            "Precision score": 0.9356223175965666,
-            "Recall score": 0.872,
-            "Fbeta score": 0.9026915113871635
+            "Precision score": 0.9399141630901288,
+            "Recall score": 0.876,
+            "Fbeta score": 0.906832298136646
         },
         {
             "Value": "Tech-support",
-            "Precision score": 0.9553903345724907,
-            "Recall score": 0.9081272084805654,
-            "Fbeta score": 0.9311594202898551
+            "Precision score": 0.9278350515463918,
+            "Recall score": 0.9540636042402827,
+            "Fbeta score": 0.9407665505226482
         },
         {
             "Value": "?",
-            "Precision score": 0.9175257731958762,
-            "Recall score": 0.9319371727748691,
-            "Fbeta score": 0.9246753246753248
+            "Precision score": 0.9497206703910615,
+            "Recall score": 0.8900523560209425,
+            "Fbeta score": 0.918918918918919
         },
         {
             "Value": "Protective-serv",
-            "Precision score": 0.9587628865979382,
-            "Recall score": 0.8815165876777251,
-            "Fbeta score": 0.9185185185185185
+            "Precision score": 0.9595959595959596,
+            "Recall score": 0.9004739336492891,
+            "Fbeta score": 0.9290953545232273
         },
         {
             "Value": "Armed-Forces",
@@ -292,93 +292,93 @@
     "relationship": [
         {
             "Value": "Not-in-family",
-            "Precision score": 0.9727979274611399,
-            "Recall score": 0.8773364485981309,
-            "Fbeta score": 0.9226044226044227
+            "Precision score": 0.9786666666666667,
+            "Recall score": 0.8574766355140186,
+            "Fbeta score": 0.9140722291407224
         },
         {
             "Value": "Husband",
-            "Precision score": 0.9493079584775086,
-            "Recall score": 0.9271713416694829,
-            "Fbeta score": 0.9381090784749528
+            "Precision score": 0.9474587912087912,
+            "Recall score": 0.9324095978371071,
+            "Fbeta score": 0.9398739567365014
         },
         {
             "Value": "Wife",
-            "Precision score": 0.951856946354883,
-            "Recall score": 0.9288590604026845,
-            "Fbeta score": 0.9402173913043478
+            "Precision score": 0.9598337950138505,
+            "Recall score": 0.9302013422818792,
+            "Fbeta score": 0.9447852760736197
         },
         {
             "Value": "Own-child",
             "Precision score": 1.0,
-            "Recall score": 0.8955223880597015,
-            "Fbeta score": 0.9448818897637796
+            "Recall score": 0.8208955223880597,
+            "Fbeta score": 0.9016393442622952
         },
         {
             "Value": "Unmarried",
-            "Precision score": 0.9795918367346939,
-            "Recall score": 0.8807339449541285,
-            "Fbeta score": 0.927536231884058
+            "Precision score": 0.9946524064171123,
+            "Recall score": 0.8532110091743119,
+            "Fbeta score": 0.9185185185185184
         },
         {
             "Value": "Other-relative",
             "Precision score": 1.0,
-            "Recall score": 0.8918918918918919,
-            "Fbeta score": 0.9428571428571428
+            "Recall score": 0.8378378378378378,
+            "Fbeta score": 0.911764705882353
         }
     ],
     "race": [
         {
             "Value": "White",
-            "Precision score": 0.9529480104559976,
-            "Recall score": 0.9220177040888015,
-            "Fbeta score": 0.9372277369135185
+            "Precision score": 0.9531272674502975,
+            "Recall score": 0.9228607559364901,
+            "Fbeta score": 0.9377498572244433
         },
         {
             "Value": "Black",
-            "Precision score": 0.9613259668508287,
-            "Recall score": 0.8992248062015504,
-            "Fbeta score": 0.9292389853137517
+            "Precision score": 0.9689265536723164,
+            "Recall score": 0.8863049095607235,
+            "Fbeta score": 0.9257759784075574
         },
         {
             "Value": "Asian-Pac-Islander",
-            "Precision score": 0.9545454545454546,
-            "Recall score": 0.9130434782608695,
-            "Fbeta score": 0.9333333333333332
+            "Precision score": 0.947565543071161,
+            "Recall score": 0.9166666666666666,
+            "Fbeta score": 0.9318600368324125
         },
         {
             "Value": "Amer-Indian-Eskimo",
-            "Precision score": 0.9393939393939394,
-            "Recall score": 0.8611111111111112,
-            "Fbeta score": 0.8985507246376813
+            "Precision score": 0.9166666666666666,
+            "Recall score": 0.9166666666666666,
+            "Fbeta score": 0.9166666666666666
         },
         {
             "Value": "Other",
-            "Precision score": 0.9565217391304348,
-            "Recall score": 0.88,
-            "Fbeta score": 0.9166666666666666
+            "Precision score": 0.9523809523809523,
+            "Recall score": 0.8,
+            "Fbeta score": 0.8695652173913043
         }
     ],
     "sex": [
         {
             "Value": "Male",
-            "Precision score": 0.9516429014259145,
-            "Recall score": 0.9216451516061243,
-            "Fbeta score": 0.9364038432209851
+            "Precision score": 0.9503557067738942,
+            "Recall score": 0.9223956769738817,
+            "Fbeta score": 0.9361669713589276
         },
         {
             "Value": "Female",
-            "Precision score": 0.9632616487455197,
-            "Recall score": 0.9117896522476675,
-            "Fbeta score": 0.9368191721132897
+            "Precision score": 0.971894832275612,
+            "Recall score": 0.909245122985581,
+            "Fbeta score": 0.939526730937774
         }
     ],
     "native-country": [
         {
             "Value": "United-States",
-            "Precision score": 0.9538483796296297,
-            "Recall score": 0.9193975735601729,
-            "Fbeta score": 0.9363061847617695
+            "Precision score": 0.9540860525555876,
+            "Recall score": 0.9214893320317947,
+            "Fbeta score": 0.9375044335674257
         },
         {
             "Value": "Cuba",
@@ -388,39 +388,39 @@
         },
         {
             "Value": "Jamaica",
-            "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Precision score": 0.9,
+            "Recall score": 0.9,
+            "Fbeta score": 0.9
         },
         {
             "Value": "India",
-            "Precision score": 0.9230769230769231,
+            "Precision score": 0.8780487804878049,
             "Recall score": 0.9,
-            "Fbeta score": 0.9113924050632911
+            "Fbeta score": 0.888888888888889
         },
         {
             "Value": "?",
-            "Precision score": 0.9337748344370861,
-            "Recall score": 0.9657534246575342,
-            "Fbeta score": 0.9494949494949495
+            "Precision score": 0.9574468085106383,
+            "Recall score": 0.9246575342465754,
+            "Fbeta score": 0.9407665505226481
         },
         {
             "Value": "Mexico",
-            "Precision score": 0.9666666666666667,
-            "Recall score": 0.8787878787878788,
-            "Fbeta score": 0.9206349206349207
+            "Precision score": 0.9310344827586207,
+            "Recall score": 0.8181818181818182,
+            "Fbeta score": 0.8709677419354839
         },
         {
             "Value": "South",
-            "Precision score": 0.9333333333333333,
+            "Precision score": 0.8235294117647058,
             "Recall score": 0.875,
-            "Fbeta score": 0.9032258064516129
+            "Fbeta score": 0.8484848484848485
         },
         {
             "Value": "Puerto-Rico",
-            "Precision score": 1.0,
-            "Recall score": 0.9166666666666666,
-            "Fbeta score": 0.9565217391304348
+            "Precision score": 0.9230769230769231,
+            "Recall score": 1.0,
+            "Fbeta score": 0.9600000000000001
         },
         {
             "Value": "Honduras",
@@ -430,57 +430,57 @@
         },
         {
             "Value": "England",
-            "Precision score": 0.9333333333333333,
-            "Recall score": 0.9333333333333333,
-            "Fbeta score": 0.9333333333333333
+            "Precision score": 0.9642857142857143,
+            "Recall score": 0.9,
+            "Fbeta score": 0.9310344827586207
         },
         {
             "Value": "Canada",
-            "Precision score": 0.9743589743589743,
-            "Recall score": 0.9743589743589743,
-            "Fbeta score": 0.9743589743589743
+            "Precision score": 0.9473684210526315,
+            "Recall score": 0.9230769230769231,
+            "Fbeta score": 0.935064935064935
         },
         {
             "Value": "Germany",
-            "Precision score": 0.95,
-            "Recall score": 0.8636363636363636,
-            "Fbeta score": 0.9047619047619048
+            "Precision score": 0.975609756097561,
+            "Recall score": 0.9090909090909091,
+            "Fbeta score": 0.9411764705882352
         },
         {
             "Value": "Iran",
-            "Precision score": 0.9,
-            "Recall score": 1.0,
-            "Fbeta score": 0.9473684210526316
+            "Precision score": 1.0,
+            "Recall score": 0.9444444444444444,
+            "Fbeta score": 0.9714285714285714
         },
         {
             "Value": "Philippines",
-            "Precision score": 0.95,
+            "Precision score": 0.9661016949152542,
             "Recall score": 0.9344262295081968,
-            "Fbeta score": 0.9421487603305784
+            "Fbeta score": 0.95
         },
         {
             "Value": "Italy",
-            "Precision score": 0.9166666666666666,
-            "Recall score": 0.88,
-            "Fbeta score": 0.8979591836734694
+            "Precision score": 1.0,
+            "Recall score": 0.76,
+            "Fbeta score": 0.8636363636363636
         },
         {
             "Value": "Poland",
+            "Precision score": 0.8571428571428571,
+            "Recall score": 1.0,
+            "Fbeta score": 0.923076923076923
+        },
+        {
+            "Value": "Columbia",
             "Precision score": 1.0,
             "Recall score": 1.0,
             "Fbeta score": 1.0
         },
         {
-            "Value": "Columbia",
-            "Precision score": 1.0,
-            "Recall score": 0.5,
-            "Fbeta score": 0.6666666666666666
-        },
-        {
             "Value": "Cambodia",
             "Precision score": 1.0,
-            "Recall score": 0.8571428571428571,
-            "Fbeta score": 0.923076923076923
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Thailand",
@@ -491,8 +491,8 @@
         {
             "Value": "Ecuador",
             "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Recall score": 0.5,
+            "Fbeta score": 0.6666666666666666
         },
         {
             "Value": "Laos",
@@ -503,20 +503,20 @@
         {
             "Value": "Taiwan",
             "Precision score": 1.0,
-            "Recall score": 0.95,
-            "Fbeta score": 0.9743589743589743
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Haiti",
-            "Precision score": 1.0,
-            "Recall score": 0.5,
-            "Fbeta score": 0.6666666666666666
+            "Precision score": 0.75,
+            "Recall score": 0.75,
+            "Fbeta score": 0.75
         },
         {
             "Value": "Portugal",
             "Precision score": 1.0,
-            "Recall score": 0.75,
-            "Fbeta score": 0.8571428571428571
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Dominican-Republic",
@@ -527,44 +527,44 @@
         {
             "Value": "El-Salvador",
             "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Recall score": 0.7777777777777778,
+            "Fbeta score": 0.8750000000000001
         },
         {
             "Value": "France",
             "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Recall score": 0.9166666666666666,
+            "Fbeta score": 0.9565217391304348
         },
         {
             "Value": "Guatemala",
             "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Recall score": 0.6666666666666666,
+            "Fbeta score": 0.8
         },
         {
             "Value": "China",
-            "Precision score": 0.95,
+            "Precision score": 0.9047619047619048,
             "Recall score": 0.95,
-            "Fbeta score": 0.9500000000000001
+            "Fbeta score": 0.9268292682926829
         },
         {
             "Value": "Japan",
-            "Precision score": 0.8846153846153846,
-            "Recall score": 0.9583333333333334,
-            "Fbeta score": 0.9199999999999999
+            "Precision score": 0.9545454545454546,
+            "Recall score": 0.875,
+            "Fbeta score": 0.9130434782608695
         },
         {
             "Value": "Yugoslavia",
-            "Precision score": 0.8,
-            "Recall score": 0.6666666666666666,
-            "Fbeta score": 0.7272727272727272
+            "Precision score": 1.0,
+            "Recall score": 0.8333333333333334,
+            "Fbeta score": 0.9090909090909091
         },
         {
             "Value": "Peru",
-            "Precision score": 1.0,
+            "Precision score": 0.6666666666666666,
             "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Fbeta score": 0.8
         },
         {
             "Value": "Outlying-US(Guam-USVI-etc)",
@@ -575,8 +575,8 @@
         {
             "Value": "Scotland",
             "Precision score": 1.0,
-            "Recall score": 0.6666666666666666,
-            "Fbeta score": 0.8
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Trinadad&Tobago",
@@ -586,9 +586,9 @@
         },
         {
             "Value": "Greece",
-            "Precision score": 1.0,
-            "Recall score": 1.0,
-            "Fbeta score": 1.0
+            "Precision score": 0.875,
+            "Recall score": 0.875,
+            "Fbeta score": 0.875
         },
         {
             "Value": "Nicaragua",
@@ -599,14 +599,14 @@
         {
             "Value": "Vietnam",
             "Precision score": 1.0,
-            "Recall score": 0.8,
-            "Fbeta score": 0.888888888888889
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Hong",
             "Precision score": 1.0,
-            "Recall score": 0.8333333333333334,
-            "Fbeta score": 0.9090909090909091
+            "Recall score": 1.0,
+            "Fbeta score": 1.0
         },
         {
             "Value": "Ireland",
