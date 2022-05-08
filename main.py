@@ -98,30 +98,29 @@ async def welcome_message():
 
 
 # POST to do model inference.
+# FastAPI webui = http://127.0.0.1:8000/docs#/default/post_model_inference_predict_post
 @app.post("/predict")
 async def post_model_inference(postData: CensusData):
     """
     POST that does model inference.
     Output:
-        0 or 1
+        0 : salary <=50K
+        1 : salary >50K
     """
 
-    logger.info("Data used for making a post request is : %s", postData)
-    post_data = jsonable_encoder(postData)
-
-    post_data_df = pd.DataFrame(post_data, index=[0])
-    logger.info(f"Post data: {post_data_df}")
+    #post_data_df = pd.DataFrame.from_dict([postData.dict(by_alias=True)])
+    post_data_df = pd.DataFrame(jsonable_encoder(postData), index=[0])
+    logger.info(f"Data used for making a post request is: {post_data_df}")
 
     logger.info("Processing post data...")
     X, _, _, _ = process_data(
         post_data_df, categorical_features=cat_features, training=False, encoder=encoder, lb=lb)
 
     logger.info("Predicting post data...")
-    preds = model.predict(X)
-    model_inference = json.dumps({"salary_prediction": preds.tolist()})
-
-    logger.info("Predicted salary for the given data is %s", model_inference)
-    return model_inference
+    preds = model.predict(X)[0]
+    logger.info("Predicted salary for the given data is %s", preds)
+    result = {"salary_prediction": "<=50K" if preds == 0 else ">50K"}
+    return result
 
 
 #  run when the application is shutting down.
