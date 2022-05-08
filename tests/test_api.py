@@ -18,10 +18,10 @@ def test_get_on_root():
 def test_post_model_inference_less50K(test_data_less50K):
     r = client.post("/predict", json=test_data_less50K)
     assert r.status_code == 200
-    assert r.json()['salary_prediction'] == 0
+    assert r.json()['salary_prediction'] == "<=50K"
 
 
 def test_post_model_inference_more50K(test_data_more50K):
     r = client.post("/predict", json=test_data_more50K)
     assert r.status_code == 200
-    assert r.json()['salary_prediction'] == 1
+    assert r.json()['salary_prediction'] == ">50K"
