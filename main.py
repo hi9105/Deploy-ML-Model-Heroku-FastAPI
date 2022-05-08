@@ -87,9 +87,6 @@ lb = joblib.load(os.path.join("starter_code", "model_files", "lb.pkl"))
 async def startup_event():
     logger.info("Additionally model, encoder and lb can be loaded on startup for faster predictions")
     # global model, encoder, lb
-    # model = joblib.load(os.path.join("starter_code", "model_files", "random_forest_model.pkl"))
-    # encoder = joblib.load(os.path.join("starter_code", "model_files", "encoder.pkl"))
-    # lb = joblib.load(os.path.join("starter_code", "model_files", "lb.pkl"))
 
 
 # GET on the root to give a welcome message.

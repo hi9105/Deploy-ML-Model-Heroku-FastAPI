@@ -39,12 +39,12 @@ def categorical_features():
     return [
         "workclass",
         "education",
-        "marital_status",
+        "marital-status",
         "occupation",
         "relationship",
         "race",
         "sex",
-        "native_country",
+        "native-country",
     ]
 
 
