@@ -3,14 +3,14 @@ import pandas as pd
 import joblib
 
 sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
-#sys.path.insert(0, os.getcwd())
+# sys.path.insert(0, os.getcwd())
 from starter_code.ml.data import process_data
 
 
 @pytest.fixture(scope='session')
 def data(request):
-    #ROOT_DIR = os.path.abspath(os.curdir)
-    #data = pd.read_csv(os.path.join(ROOT_DIR, 'starter_code/data/cleanCensusData.csv'))
+    # ROOT_DIR = os.path.abspath(os.curdir)
+    # data = pd.read_csv(os.path.join(ROOT_DIR, 'starter_code/data/cleanCensusData.csv'))
     data = pd.read_csv("./starter_code/data/cleanCensusData.csv")
     return data
 
@@ -106,7 +106,7 @@ def test_data_less50K(request):
         'capital-loss': 0,
         'hours-per-week': 40,
         'native-country': 'United-States'
-        #'salary': '<=50K'
+        # 'salary': '<=50K'
     }
 
     return data_less50K
@@ -115,21 +115,37 @@ def test_data_less50K(request):
 @pytest.fixture(scope='session')
 def test_data_more50K(request):
     data_more50K = {
-        'age': 40,
-        'workclass': 'Private',
-        'fnlgt': 154374,
-        'education': 'HS-grad',
-        'education-num': 9,
-        'marital-status': 'Married-civ-spouse',
-        'occupation': 'Machine-op-inspct',
-        'relationship': 'Husband',
-        'race': 'White',
-        'sex': 'Male',
-        'capital-gain': 0,
-        'capital-loss': 0,
-        'hours-per-week': 40,
-        'native-country': 'United-States'
-        #'salary': '>50K'
+
+        "age": 52,
+        "workclass": "Self-emp-inc",
+        "fnlgt": 287927,
+        "education": "HS-grad",
+        "education-num": 9,
+        "marital-status": "Married-civ-spouse",
+        "occupation": "Exec-managerial",
+        "relationship": "Wife",
+        "race": "White",
+        "sex": "Female",
+        "capital-gain": 15024,
+        "capital-loss": 0,
+        "hours-per-week": 40,
+        "native-country": "United-States"
+
+        # 'age': 40,
+        # 'workclass': 'Private',
+        # 'fnlgt': 154374,
+        # 'education': 'HS-grad',
+        # 'education-num': 9,
+        # 'marital-status': 'Married-civ-spouse',
+        # 'occupation': 'Machine-op-inspct',
+        # 'relationship': 'Husband',
+        # 'race': 'White',
+        # 'sex': 'Male',
+        # 'capital-gain': 0,
+        # 'capital-loss': 0,
+        # 'hours-per-week': 40,
+        # 'native-country': 'United-States'
+        # 'salary': '>50K'
     }
 
     return data_more50K
