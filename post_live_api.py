@@ -36,5 +36,5 @@ if __name__ == '__main__':
     response = requests.post(url, data=json.dumps(request_data), headers=headers)
 
     logging.info(f"Response status code : {response.status_code}")
-    logging.info("Predicted salary for the given data is : %s", response.json())
-    logging.info(response.json()['salary_prediction'])
+    logging.info(f"Response body : {response.json()}")
+    logging.info("Predicted salary for the given data is : %s", response.json()['salary_prediction'])

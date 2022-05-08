@@ -20,6 +20,7 @@ def test_post_model_inference_less50K(test_data_less50K):
     assert r.status_code == 200
     #assert r.json()['salary_prediction'] == "<=50K"
     assert r.json() == {"salary_prediction": "<=50K"}
+    assert r.json()['salary_prediction'] == "<=50K"
 
 
 def test_post_model_inference_more50K(test_data_more50K):
