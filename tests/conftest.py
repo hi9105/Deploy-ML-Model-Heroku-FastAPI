@@ -105,8 +105,8 @@ def test_data_less50K(request):
         'capital-gain': 0,
         'capital-loss': 0,
         'hours-per-week': 40,
-        'native-country': 'United-States',
-        'salary': '<=50K'
+        'native-country': 'United-States'
+        #'salary': '<=50K'
     }
 
     return data_less50K
@@ -128,8 +128,8 @@ def test_data_more50K(request):
         'capital-gain': 0,
         'capital-loss': 0,
         'hours-per-week': 40,
-        'native-country': 'United-States',
-        'salary': '>50K'
+        'native-country': 'United-States'
+        #'salary': '>50K'
     }
 
     return data_more50K
