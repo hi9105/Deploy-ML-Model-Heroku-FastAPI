@@ -5,6 +5,7 @@ This RESTful API is using FastAPI for running Random forest classifier on Heroku
 """
 
 import sys
+
 sys.path.append('../Deploy-ML-Model-Heroku-FastAPI')
 
 import pandas as pd
@@ -24,7 +25,7 @@ cat_features = ["workclass", "education", "marital-status", "occupation", "relat
 # this is required for running DVC on Heroku
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
-    #os.system("dvc remote add -d s3remote s3://modelawsbucket/amazons3folder")
+    # os.system("dvc remote add -d s3remote s3://modelawsbucket/amazons3folder")
     if os.system("dvc pull") != 0:
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
@@ -76,13 +77,19 @@ class CensusData(BaseModel):
         alias_generator = underscore_to_hyphen
 
 
+model = joblib.load(os.path.join("starter_code", "model_files", "random_forest_model.pkl"))
+encoder = joblib.load(os.path.join("starter_code", "model_files", "encoder.pkl"))
+lb = joblib.load(os.path.join("starter_code", "model_files", "lb.pkl"))
+
+
 # run before the application starts.
 @app.on_event("startup")
 async def startup_event():
-    global model, encoder, lb
-    model = joblib.load(os.path.join("starter_code", "model_files", "random_forest_model.pkl"))
-    encoder = joblib.load(os.path.join("starter_code", "model_files", "encoder.pkl"))
-    lb = joblib.load(os.path.join("starter_code", "model_files", "lb.pkl"))
+    logger.info("Additionally model, encoder and lb can be loaded on startup for faster predictions")
+    # global model, encoder, lb
+    # model = joblib.load(os.path.join("starter_code", "model_files", "random_forest_model.pkl"))
+    # encoder = joblib.load(os.path.join("starter_code", "model_files", "encoder.pkl"))
+    # lb = joblib.load(os.path.join("starter_code", "model_files", "lb.pkl"))
 
 
 # GET on the root to give a welcome message.
@@ -108,7 +115,7 @@ async def post_model_inference(postData: CensusData):
         1 : salary >50K
     """
 
-    #post_data_df = pd.DataFrame.from_dict([postData.dict(by_alias=True)])
+    # post_data_df = pd.DataFrame.from_dict([postData.dict(by_alias=True)])
     post_data_df = pd.DataFrame(jsonable_encoder(postData), index=[0])
     logger.info(f"Data used for making a post request is: {post_data_df}")
 

@@ -21,16 +21,16 @@ def expected_columns():
             'workclass',
             'fnlgt',
             'education',
-            'education_num',
-            'marital_status',
+            'education-num',
+            'marital-status',
             'occupation',
             'relationship',
             'race',
             'sex',
-            'capital_gain',
-            'capital_loss',
-            'hours_per_week',
-            'native_country',
+            'capital-gain',
+            'capital-loss',
+            'hours-per-week',
+            'native-country',
             'salary']
 
 
